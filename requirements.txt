@@ -1,0 +1,14 @@
+bleach==6.1.0
+certifi==2024.7.4
+charset-normalizer==3.3.2
+configparser==7.1.0
+idna==3.7
+importlib_metadata==8.4.0
+laceworksdk==4.1.0
+python-dotenv==1.0.1
+PyYAML==6.0.2
+requests==2.32.3
+six==1.16.0
+urllib3==2.2.2
+webencodings==0.5.1
+zipp==3.20.0
