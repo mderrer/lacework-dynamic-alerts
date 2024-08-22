@@ -6,14 +6,11 @@ import sys
 from laceworksdk import LaceworkClient, exceptions
 import yaml
 
-# this is a test
-# this is another t3est
-
 ISO_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
-
+ALERT_DIR = "alerts/"
 
 def load_yaml_file(filename):
-    with open(filename, "r", encoding="utf-8") as file:
+    with open(ALERT_DIR + filename, "r", encoding="utf-8") as file:
         # Load the contents of the file
         data = yaml.safe_load(file)
     return data
@@ -50,7 +47,7 @@ def format_list_as_quoted_string(list):
 
 def main():
     files = []
-    for file in os.listdir(os.getcwd()):
+    for file in os.listdir(ALERT_DIR):
         if file.endswith(".yaml"):
             files.append(file)
 
