@@ -12,15 +12,8 @@ import yaml
 ISO_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
 
-def absolute_file_paths(directory):
-    
-    for dirpath,_,filenames in os.walk(directory):
-        for f in filenames:
-            yield os.path.abspath(os.path.join(dirpath, f))
-
-
 def load_yaml_file(filename):
-    with open("alerts/{filename}", "r", encoding="utf-8") as file:
+    with open(filename, "r", encoding="utf-8") as file:
         # Load the contents of the file
         data = yaml.safe_load(file)
     return data
@@ -57,8 +50,7 @@ def format_list_as_quoted_string(list):
 
 def main():
     files = []
-    files = absolute_file_paths("alerts")
-    for file in os.listdir("alerts"):
+    for file in os.listdir(os.getcwd()):
         if file.endswith(".yaml"):
             files.append(file)
 
