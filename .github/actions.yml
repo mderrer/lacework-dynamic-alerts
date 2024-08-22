@@ -27,6 +27,8 @@ jobs:
         env:
           API_KEY: ${{ secrets.API_KEY }}
           API_SECRET: ${{ secrets.API_SECRET }}
+          ACCOUNT: ${{ env.API_SECRET }}
+
         run: python main.py
           
       - name: commit files
@@ -39,5 +41,5 @@ jobs:
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub automaticly created this toekn on each run
           branch: main 

@@ -1,4 +1,6 @@
 from datetime import datetime, timedelta, timezone
+import logging
+import logging.handlers
 import os
 from string import Template
 import sys
@@ -8,10 +10,26 @@ import yaml
 
 ISO_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 ALERT_DIR = "alerts/"
+API_KEY = os.environ["API_KEY"]
+API_SECRET = os.environ["API_SECRET"]
+ACCOUNT = os.environ["ACCOUNT"]
+
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+logger_file_handler = logging.handlers.RotatingFileHandler(
+    "status.log",
+    maxBytes=1024 * 1024,
+    backupCount=1,
+    encoding="utf8",
+)
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+logger_file_handler.setFormatter(formatter)
+logger.addHandler(logger_file_handler)
+
 
 def load_yaml_file(filename):
     with open(ALERT_DIR + filename, "r", encoding="utf-8") as file:
-        # Load the contents of the file
         data = yaml.safe_load(file)
     return data
 
@@ -35,7 +53,7 @@ def update_dynamic_query(laceworkclient, query, query_id, query_var):
     query = query_template.substitute(query_var=query_var)
     try:
         laceworkclient.queries.update(query_text=query, query_id=query_id)
-        print(f"{query_id} successfully updated.")
+        logger.info(f"{query_id} successfully updated.")
     except exceptions.ApiError as e:
         raise e
 
@@ -52,9 +70,11 @@ def main():
             files.append(file)
 
     try:
-        lw = LaceworkClient()
+        lw = LaceworkClient(account=ACCOUNT,
+                            api_key=API_KEY,
+                            api_secret=API_SECRET)
     except exceptions.ApiError as e:
-        print(f"Lacework API error: {e}")
+        logger.error(f"Lacework API error: {e}")
         sys.exit()
 
     for query_file in files:
@@ -64,8 +84,8 @@ def main():
                 lw, queries["resource_query"]["queryText"]
             )
         except exceptions.ApiError as e:
-            print(e)
-            print(f"Error with resource query\nUnable to automate: {query_file}")
+            logger.error(e)
+            logger.error(f"Error with resource query\nUnable to automate: {query_file}")
             continue
 
         if dynamic_values:
@@ -78,13 +98,13 @@ def main():
                     values,
                 )
             except exceptions.ApiError as e:
-                print(e)
-                print(
+                logger.error(e)
+                logger.error(
                     f"Error with dynamic quert update\nUnable to automate: {query_file}"
                 )
         else:
             # more thought needs to go into this, should
-            print(f"No resoure values returned. {query_file} not updated")
+            logger.error(f"No resoure values returned. {query_file} not updated")
 
 
 if __name__ == "__main__":
