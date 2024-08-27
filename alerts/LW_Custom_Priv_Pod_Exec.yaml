@@ -15,7 +15,6 @@ resource_query:
                 NAMESPACE as resource_resultssss
             }
         }
-    ifNoResults: "update" # 'update', 'keep existing'
         
 dynamic_query:
     queryId: LW_Custom_Priv_Pod_Exec
