@@ -14,3 +14,6 @@
 2024-08-26 00:54:52,350 - __main__ - ERROR - No resoure values returned. s3-tags.yaml not updated
 2024-08-27 00:55:09,159 - __main__ - ERROR - No resoure values returned. LW_Custom_Priv_Pod_Exec.yaml not updated
 2024-08-27 00:55:09,660 - __main__ - ERROR - No resoure values returned. s3-tags.yaml not updated
+2024-08-28 00:55:34,170 - __main__ - ERROR - No resoure values returned. LW_Custom_Priv_Pod_Exec.yaml not updated
+2024-08-28 00:55:34,857 - __main__ - ERROR - No resoure values returned. LW_Global_Host_Activity_Attempted_Cron_Job_Creation_Prod_Only.yaml not updated
+2024-08-28 00:55:35,586 - __main__ - ERROR - No resoure values returned. s3-tags.yaml not updated
