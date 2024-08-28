@@ -22,3 +22,5 @@
 2024-08-28 03:56:55,517 - __main__ - ERROR - No resoure values returned. s3-tags.yaml not updated
 2024-08-28 14:10:32,929 - __main__ - ERROR - No resoure values returned. LW_Custom_Priv_Pod_Exec.yaml not updated
 2024-08-28 14:10:34,749 - __main__ - INFO - LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only successfully updated.
+2024-08-28 15:37:32,745 - __main__ - ERROR - No resource values returned. LW_Custom_Priv_Pod_Exec.yaml not updated
+2024-08-28 15:37:33,983 - __main__ - INFO - LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only successfully updated.
