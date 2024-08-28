@@ -18,7 +18,7 @@ dynamic_query:
     queryText: |-
         {
             source {
-                LW_HA_SYSCALLS_EXEC a
+                LW_HA_SYSCALLS_EXEC
             }
             filter {
                 CMDLINE like '%* * *%' and CMDLINE like any('%crontab%', '/etc/cron.%')
