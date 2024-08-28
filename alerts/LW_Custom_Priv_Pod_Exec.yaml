@@ -12,7 +12,7 @@ resource_query:
             
             }
             return distinct {
-                NAMESPACE as resource_resultssss
+                NAMESPACE as resource_results
             }
         }
         
