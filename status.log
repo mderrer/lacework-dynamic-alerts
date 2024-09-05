@@ -38,3 +38,5 @@
 2024-09-03 00:55:46,148 - __main__ - ERROR - No resource values returned. LW_Global_Host_Activity_Attempted_Cron_Job_Creation_Prod_Only.yaml not updated
 2024-09-04 00:56:33,987 - __main__ - ERROR - No resource values returned. LW_Custom_Priv_Pod_Exec.yaml not updated
 2024-09-04 00:56:34,393 - __main__ - ERROR - No resource values returned. LW_Global_Host_Activity_Attempted_Cron_Job_Creation_Prod_Only.yaml not updated
+2024-09-05 00:56:31,046 - __main__ - ERROR - No resource values returned. LW_Global_Host_Activity_Attempted_Cron_Job_Creation_Prod_Only.yaml not updated
+2024-09-05 00:56:31,653 - __main__ - ERROR - No resource values returned. LW_Custom_Priv_Pod_Exec.yaml not updated
