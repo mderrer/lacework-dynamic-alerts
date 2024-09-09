@@ -6,7 +6,7 @@ resource_query:
                 LW_HE_MACHINES
             }
             filter {
-                TAGS:Account = '844993634255'   
+                TAGS:Environment = 'Prod'   
             }
             return distinct {
                 MID as resource_results
