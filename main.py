@@ -104,7 +104,7 @@ def main():
                 )
         else:
             # more thought needs to go into this, should
-            logger.error(f"No resource values returned. Alert baed on {query_file} not updated")
+            logger.error(f"No resource values returned. Alert based on {query_file} not updated")
 
 
 if __name__ == "__main__":
