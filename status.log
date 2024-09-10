@@ -1,3 +1,5 @@
 2024-08-29 00:55:54,124 - __main__ - INFO - LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only successfully updated.
 2024-09-09 17:39:05,072 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Global_Host_Activity_Attempted_Cron_Job_Creation_Prod_Only.yaml not updated
 2024-09-09 17:39:05,636 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
+2024-09-10 00:57:12,917 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only.yaml not updated
+2024-09-10 00:57:13,616 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
