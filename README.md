@@ -71,7 +71,7 @@ queryText: |-
     }
 ```
 
-> The query should return one field which must be use the alias "resource_results"
+> The query must return one field which is aliased as "resource_results"
 
 The query that ```lacework-global-10``` (S3 Bucket Deleted) is based on is ```LW_Global_AWS_CTA_S3BucketDeleted```
 
