@@ -187,7 +187,7 @@ dynamic_query:
 
 # Configuring the Action
 Add Actions secrets for interacting with the Lacework API:
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/82008809-02aa-4527-92ba-18e3ed6ef56f)
 
 Configure Lacework ```ACCOUNT``` in .github/workflows/main.yml:
 
