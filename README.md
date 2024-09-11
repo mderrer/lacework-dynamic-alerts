@@ -185,7 +185,7 @@ dynamic_query:
 }
 ```
 
-# Configuring the Action
+## Configuring the Action
 Add Actions secrets for interacting with the Lacework API:
 ![image](https://github.com/user-attachments/assets/82008809-02aa-4527-92ba-18e3ed6ef56f)
 
@@ -207,3 +207,10 @@ on:
     - cron: '0 0 * * *' # every day at 00:00
   workflow_dispatch:  # Allows you to run the action manually
 ```
+
+## Required Steps for Creating a Dynamic Alert
+
+1. Create the resource query that returns results for to be used by the dynamic query
+2. Create dynamic query and add to Lacework
+3. Create a policy based on the dynamic query and add to Lacework
+4. Format a yaml file and add to ```alerts/```
