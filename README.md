@@ -75,7 +75,7 @@ queryText: |-
 
 The query that ```lacework-global-10``` (S3 Bucket Deleted) is based on is ```LW_Global_AWS_CTA_S3BucketDeleted```
 
-```json
+```code
 {
     source {
         CloudTrailRawEvents
@@ -96,7 +96,7 @@ The query that ```lacework-global-10``` (S3 Bucket Deleted) is based on is ```LW
 
 We'll modify the logic and add a placeholder for a variable:
 
-```json
+```code
 {
     source {
         CloudTrailRawEvents,
@@ -164,7 +164,7 @@ dynamic_query:
 
 > When initially adding adding the query ```LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only``` to Lacework the variable ```${query_var}``` cannot be present as it's not valid LQL. Instead add an empty single-quoted string in the ```in``` clause: ```IN ('')```:
 
-```json
+```code
 {
     source {
         CloudTrailRawEvents,
