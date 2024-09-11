@@ -11,18 +11,19 @@ For instance, lacework-global-10 (S3 Bucket Deleted), alerts on all S3 buckets t
 This is impossible because because tagging information cannot be found in a Cloudtrail log line. 
 
 ```yaml
-{
-    "requestParameters": {
-    "Host": "example-bucket.eu-central-1.amazonaws.com",
-    "bucketName": "example-bucket"
-    },
-    "resources": [
+queryText: |-
     {
-        "ARN": "arn:aws:s3:::example-bucket",
-        "accountId": "xxx",
-        "type": "AWS::S3::Bucket"
+        "requestParameters": {
+        "Host": "example-bucket.eu-central-1.amazonaws.com",
+        "bucketName": "example-bucket"
+        },
+        "resources": [
+        {
+            "ARN": "arn:aws:s3:::example-bucket",
+            "accountId": "xxx",
+            "type": "AWS::S3::Bucket"
+        }
     }
-}
       
 ```
 
