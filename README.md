@@ -199,7 +199,7 @@ Configure Lacework ```ACCOUNT``` in .github/workflows/main.yml:
           ACCOUNT: lwcs
 ```
 
-Modify action cron as needed:
+Modify the Action's cron as needed:
 
 ```yaml
 on:
