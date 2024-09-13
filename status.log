@@ -1,14 +1,3 @@
 2024-08-29 00:55:54,124 - __main__ - INFO - LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only successfully updated.
-2024-09-09 17:39:05,072 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Global_Host_Activity_Attempted_Cron_Job_Creation_Prod_Only.yaml not updated
-2024-09-09 17:39:05,636 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
-2024-09-10 00:57:12,917 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only.yaml not updated
-2024-09-10 00:57:13,616 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
-2024-09-11 00:56:41,069 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only.yaml not updated
-2024-09-11 00:56:41,661 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
-2024-09-12 00:56:51,670 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only.yaml not updated
-2024-09-12 00:56:52,327 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
-2024-09-13 00:56:55,704 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only.yaml not updated
-2024-09-13 00:56:56,546 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
-2024-09-13 16:41:40,990 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Host_Activity_AttemptedCronJobCreation_Prod_Only.yaml not updated
 2024-09-13 16:41:42,388 - __main__ - INFO - LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only successfully updated.
 2024-09-13 16:41:43,160 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
