@@ -1,0 +1,36 @@
+resource_query:
+    queryId: LW_Custom_Get_All_S3_Tagged_Prod
+    queryText: |-
+        {
+            source {
+                LW_CFG_AWS_S3
+            }
+            filter {
+                UPPER(RESOURCE_TAGS:Environment) = 'PROD'
+            }
+            return distinct {
+                ARN as resource_results 
+            }
+        }
+
+dynamic_query:
+    queryId: LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only
+    queryText: |-
+        {
+            source {
+                CloudTrailRawEvents,
+                array_to_rows(EVENT:resources) (bucket)
+            }
+            filter {
+                EVENT_SOURCE = 's3.amazonaws.com'
+                and EVENT_NAME in ('DeleteBucket')
+                and ERROR_CODE is null
+                and bucket:ARN in (${query_var})
+            }
+            return distinct {
+                INSERT_ID,
+                INSERT_TIME,
+                EVENT_TIME,
+                EVENT
+            }
+        }
