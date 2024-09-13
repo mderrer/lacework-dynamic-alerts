@@ -103,7 +103,6 @@ def main():
                     f"Error with dynamic quert update\nUnable to automate: {query_file}"
                 )
         else:
-            # more thought needs to go into this, should
             logger.error(f"No values returned from resource query. Alert based on {query_file} not updated")
 
 
