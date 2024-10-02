@@ -39,3 +39,5 @@
 2024-09-30 01:01:43,784 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
 2024-10-01 01:05:24,851 - __main__ - INFO - LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only successfully updated.
 2024-10-01 01:05:27,117 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
+2024-10-02 00:59:28,672 - __main__ - INFO - LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only successfully updated.
+2024-10-02 00:59:29,829 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
