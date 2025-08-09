@@ -665,3 +665,5 @@ Unable to automate: LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only.yaml
 2025-08-08 01:18:27,546 - __main__ - ERROR - [500] Server Error - Internal Error
 2025-08-08 01:18:27,546 - __main__ - ERROR - Error with resource query
 Unable to automate: LW_Custom_Priv_Pod_Exec.yaml
+2025-08-09 01:12:15,425 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only.yaml not updated
+2025-08-09 01:12:16,354 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
