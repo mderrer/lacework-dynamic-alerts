@@ -691,3 +691,5 @@ Unable to automate: LW_Custom_Priv_Pod_Exec.yaml
 2025-08-20 01:07:45,515 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
 2025-08-21 01:06:30,632 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only.yaml not updated
 2025-08-21 01:06:31,377 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
+2025-08-22 01:07:52,815 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_AWS_CTA_S3BucketDeleted_Prod_Tag_Only.yaml not updated
+2025-08-22 01:07:53,584 - __main__ - ERROR - No values returned from resource query. Alert based on LW_Custom_Priv_Pod_Exec.yaml not updated
