@@ -1042,3 +1042,4 @@ Unable to automate: LW_Custom_Priv_Pod_Exec.yaml
 2026-07-31 02:11:18,621 - __main__ - ERROR - Lacework API error: [400] Bad Request - Account is inactive
 2026-08-01 02:12:23,535 - __main__ - ERROR - Lacework API error: [400] Bad Request - Account is inactive
 2026-08-02 02:09:39,528 - __main__ - ERROR - Lacework API error: [400] Bad Request - Account is inactive
+2026-08-03 02:11:42,162 - __main__ - ERROR - Lacework API error: [400] Bad Request - Account is inactive
